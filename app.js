@@ -48,6 +48,7 @@ const getLyrics = (artist, title) =>{
 //Display lyrics
 const displayLyrics = lyrics => {
     const lyricsContainer = document.getElementById('lyrics-container');
+    document.getElementById('err-msg').innerText = "";
     if(lyrics != ""){
         lyricsContainer.innerText = lyrics;
     }else{
